@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futbalia - Terms & Conditions</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&display=swap');
+
+        :root {
+            --green:      #3eca00;
+            --green-dim:  #2a9900;
+            --green-glow: rgba(62,202,0,0.15);
+            --bg:         #0a0f08;
+            --surface:    #111a0d;
+            --border:     #1e2e18;
+            --text:       #d4e8cc;
+            --muted:      #6b8c60;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'DM Mono', monospace;
+            background-color: var(--bg);
+            color: var(--text);
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+            line-height: 1.75;
+            font-size: 0.95rem;
+        }
+
+        /* ── Header ── */
+        header {
+            margin-bottom: 56px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 32px;
+        }
+
+        .app-label {
+            font-family: 'Syne', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            color: var(--green);
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            font-family: 'Syne', sans-serif;
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 800;
+            color: #ffffff;
+            line-height: 1.1;
+            margin-bottom: 16px;
+        }
+
+        h1 span {
+            color: var(--green);
+        }
+
+        .meta {
+            font-size: 0.8rem;
+            color: var(--muted);
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .meta span::before {
+            content: '— ';
+            color: var(--green);
+        }
+
+        /* ── Sections ── */
+        section {
+            margin-bottom: 40px;
+            padding: 28px 28px 28px 24px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--green);
+            border-radius: 4px;
+        }
+
+        h2 {
+            font-family: 'Syne', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--green);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2 .section-num {
+            font-family: 'DM Mono', monospace;
+            font-size: 0.72rem;
+            color: var(--muted);
+            font-weight: 400;
+        }
+
+        p {
+            color: var(--text);
+            margin-bottom: 12px;
+        }
+
+        p:last-child { margin-bottom: 0; }
+
+        ul {
+            padding-left: 0;
+            list-style: none;
+            margin-top: 8px;
+        }
+
+        ul li {
+            padding: 6px 0 6px 20px;
+            position: relative;
+            color: var(--text);
+            border-bottom: 1px solid var(--border);
+        }
+
+        ul li:last-child { border-bottom: none; }
+
+        ul li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--green);
+            font-size: 0.75rem;
+            top: 8px;
+        }
+
+        strong {
+            color: #ffffff;
+            font-weight: 500;
+        }
+
+        a {
+            color: var(--green);
+            text-decoration: none;
+            border-bottom: 1px solid var(--green-dim);
+        }
+
+        a:hover { color: #ffffff; }
+
+        /* ── Contact box ── */
+        .contact-box {
+            margin-top: 14px;
+            background: var(--green-glow);
+            border: 1px solid var(--green-dim);
+            border-radius: 4px;
+            padding: 16px 20px;
+            font-size: 0.88rem;
+        }
+
+        .contact-box .label {
+            font-family: 'Syne', sans-serif;
+            font-size: 0.7rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 4px;
+        }
+
+        /* ── Footer ── */
+        footer {
+            margin-top: 64px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 0.78rem;
+            color: var(--muted);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        footer span { color: var(--green); }
+    </style>
+</head>
+<body>
+
+    <header>
+        <p class="app-label">Futbalia · HarmonyOS Smartwatch</p>
+        <h1>Terms &amp; <span>Conditions</span></h1>
+        <div class="meta">
+            <p>Effective Date: June 9, 2026</p>
+            <p>Version 1.0</p>
+        </div>
+    </header>
+
+    <section>
+        <h2><span class="section-num">01</span> About Futbalia</h2>
+        <p>
+            Futbalia is a smartwatch application developed for Huawei HarmonyOS wearable devices.
+            It provides football statistics, standings, and team data for the global football championship.
+            This Privacy Policy explains how Futbalia handles information in connection with your use of the app.
+        </p>
+        <p>
+            Futbalia does not collect, store, transmit, or share personal information such as:
+        </p>
+        <ul>
+            <li>Personal identification data (name, email address, phone number)</li>
+            <li>Location data</li>
+            <li>Device identifiers or advertising IDs</li>
+            <li>Health or biometric data from your smartwatch sensors</li>
+            <li>Payment information</li>
+        </ul>
+        <p style="margin-top:14px;">The App does not require account registration or login.</p>
+    </section>
+
+    <section>
+        <h2><span class="section-num">02</span> Local Data Storage</h2>
+        <p>
+            Futbalia may store the following preferences locally on your device:
+        </p>
+        <ul>
+            <li>Favorite teams and display preferences</li>
+            <li>App configuration and settings</li>
+        </ul>
+        <p style="margin-top:14px;">
+            This data remains exclusively on your device and is used only to provide core app functionality.
+            It is never accessible to us or any third party.
+        </p>
+    </section>
+
+    <section>
+        <h2><span class="section-num">03</span> Internet Connectivity</h2>
+        <p>
+            Futbalia requires an internet connection to fetch up-to-date football statistics, standings,
+            and team data from third-party sports data providers. No personal data is transmitted during these requests.
+        </p>
+        <p>
+            All network requests are read-only data fetches and contain no personally identifiable information.
+        </p>
+    </section>
+
+    <section>
+        <h2><span class="section-num">04</span> Third-Party Data Sources</h2>
+        <p>
+            The sports data displayed in Futbalia is sourced from third-party sports data APIs.
+            We do not control the content of these external sources and are not affiliated with any
+            official football governing body or tournament organizer.
+        </p>
+        <p>
+            Access to these data sources is governed by their respective terms of service and privacy policies.
+        </p>
+    </section>
+
+    <section>
+        <h2><span class="section-num">05</span> Data Sharing</h2>
+        <p>
+            We do not sell, rent, share, or transfer your data to third parties.
+            API requests made by the App contain no personally identifiable information.
+        </p>
+    </section>
+
+    <section>
+        <h2><span class="section-num">06</span> Analytics and Tracking</h2>
+        <p>
+            Futbalia does not use analytics services, advertising SDKs, tracking technologies, or user profiling tools.
+            Your usage of the App is not monitored, recorded, or reported in any form.
+        </p>
+    </section>
+
+    <section>
+        <h2><span class="section-num">07</span> Third-Party Services</h2>
+        <p>
+            The App does not integrate with social networks, cloud storage providers, or advertising platforms.
+            Futbalia is designed exclusively for Huawei smartwatches running HarmonyOS and operates within
+            that environment only.
+        </p>
+    </section>
+
+    <section>
+        <h2><span class="section-num">08</span> Children's Privacy</h2>
+        <p>
+            Futbalia is suitable for users of all ages and does not knowingly collect personal information
+            from children or any users. Since no personal data is collected at all, there is no risk of
+            inadvertent collection from users of any age group.
+        </p>
+    </section>
+
+    <section>
+        <h2><span class="section-num">09</span> Data Control</h2>
+        <p>
+            Because your preferences are stored locally on your device, you maintain full control over
+            your data. We recommend using your device's built-in security features to protect your information.
+            Uninstalling the App will remove all locally stored data from your device.
+        </p>
+    </section>
+
+    <section>
+        <h2><span class="section-num">10</span> Updates to These Terms</h2>
+        <p>
+            We may update these Terms and Conditions from time to time to reflect changes in the App
+            or applicable regulations. Any updates will be reflected by revising the effective date at
+            the top of this document. We encourage you to review this policy periodically.
+        </p>
+    </section>
+
+    <section>
+        <h2><span class="section-num">11</span> Contact</h2>
+        <p>
+            If you have any questions, concerns, or requests regarding this Privacy Policy or the
+            Terms and Conditions of Futbalia, please reach out:
+        </p>
+        <div class="contact-box">
+            <p class="label">Support contact</p>
+            <p><strong>Futbalia Support</strong> — <a href="mailto:vgoswaldo@gmail.com">vgoswaldo@gmail.com</a></p>
+        </div>
+        <p style="margin-top:16px;">
+            By using Futbalia, you agree to these Terms and Conditions.
+        </p>
+    </section>
+
+    <footer>
+        <p>Futbalia — Terms &amp; Conditions — <span>June 2026</span></p>
+        <p>HarmonyOS Smartwatch App</p>
+    </footer>
+
+</body>
+</html>
