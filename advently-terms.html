@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advently - Terms &amp; Conditions</title>
+    <meta name="description" content="Terms and Conditions and Privacy information for Advently, a Christmas Advent calendar for HarmonyOS smartwatches.">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&display=swap');
+
+        :root {
+            --gold:      #f4c95d;
+            --gold-dim:  #b8923a;
+            --gold-glow: rgba(244,201,93,0.12);
+            --ice:       #8fd3ff;
+            --bg:        #050c33;
+            --surface:   #0b1a5e;
+            --border:    #1c2f7a;
+            --text:      #dce8ff;
+            --muted:     #8197cc;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        html { background-color: var(--bg); }
+
+        body {
+            font-family: 'DM Mono', monospace;
+            background:
+                radial-gradient(ellipse 120% 40% at 50% 100%, rgba(143,211,255,0.10), transparent 70%),
+                linear-gradient(180deg, #050c33 0%, #08175a 60%, #050c33 100%);
+            background-attachment: fixed;
+            color: var(--text);
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+            line-height: 1.75;
+            font-size: 0.95rem;
+            min-height: 100vh;
+        }
+
+        /* ── Header ── */
+        header {
+            margin-bottom: 56px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 32px;
+        }
+
+        .app-label {
+            font-family: 'Syne', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 12px;
+        }
+
+        .app-label .flake {
+            color: var(--ice);
+            letter-spacing: 0;
+            margin-right: 6px;
+        }
+
+        h1 {
+            font-family: 'Syne', sans-serif;
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 800;
+            color: #ffffff;
+            line-height: 1.1;
+            margin-bottom: 16px;
+        }
+
+        h1 span { color: var(--gold); }
+
+        .meta {
+            font-size: 0.8rem;
+            color: var(--muted);
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .meta p::before {
+            content: '— ';
+            color: var(--gold);
+        }
+
+        /* ── Sections ── */
+        section {
+            margin-bottom: 40px;
+            padding: 28px 28px 28px 24px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--gold);
+            border-radius: 4px;
+        }
+
+        h2 {
+            font-family: 'Syne', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2 .section-num {
+            font-family: 'DM Mono', monospace;
+            font-size: 0.72rem;
+            color: var(--muted);
+            font-weight: 400;
+        }
+
+        p {
+            color: var(--text);
+            margin-bottom: 12px;
+        }
+
+        p:last-child { margin-bottom: 0; }
+
+        ul {
+            padding-left: 0;
+            list-style: none;
+            margin-top: 8px;
+        }
+
+        ul li {
+            padding: 6px 0 6px 20px;
+            position: relative;
+            color: var(--text);
+            border-bottom: 1px solid var(--border);
+        }
+
+        ul li:last-child { border-bottom: none; }
+
+        ul li::before {
+            content: '❄';
+            position: absolute;
+            left: 0;
+            color: var(--ice);
+            font-size: 0.75rem;
+            top: 8px;
+        }
+
+        strong {
+            color: #ffffff;
+            font-weight: 500;
+        }
+
+        a {
+            color: var(--gold);
+            text-decoration: none;
+            border-bottom: 1px solid var(--gold-dim);
+        }
+
+        a:hover { color: #ffffff; }
+
+        .spaced { margin-top: 14px; }
+
+        /* ── Contact box ── */
+        .contact-box {
+            margin-top: 14px;
+            background: var(--gold-glow);
+            border: 1px solid var(--gold-dim);
+            border-radius: 4px;
+            padding: 16px 20px;
+            font-size: 0.88rem;
+        }
+
+        .contact-box .label {
+            font-family: 'Syne', sans-serif;
+            font-size: 0.7rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 4px;
+        }
+
+        /* ── Footer ── */
+        footer {
+            margin-top: 64px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 0.78rem;
+            color: var(--muted);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        footer span { color: var(--gold); }
+
+        @media (max-width: 520px) {
+            body { padding: 40px 16px 60px; }
+            section { padding: 22px 18px 22px 16px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <p class="app-label"><span class="flake">❄</span>Advently · HarmonyOS Smartwatch</p>
+        <h1>Terms &amp; <span>Conditions</span></h1>
+        <div class="meta">
+            <p>Effective Date: November 24, 2026</p>
+            <p>Version 1.0</p>
+        </div>
+    </header>
+
+    <section>
+        <h2><span class="section-num">01</span> About Advently</h2>
+        <p>
+            Advently is a Christmas Advent calendar application developed for Huawei HarmonyOS wearable devices.
+            From December 1 to December 24 it reveals one gift per day: a Christmas recipe, a tip for connecting
+            with your loved ones, or a fact about Christmas traditions around the world. Content is available in
+            English, Spanish, Italian, French and Chinese.
+        </p>
+        <p>
+            These Terms and Conditions explain the rules for using Advently and how the app handles information.
+            Advently does not collect, store, transmit, or share personal information such as:
+        </p>
+        <ul>
+            <li>Personal identification data (name, email address, phone number)</li>
+            <li>Location data</li>
+            <li>Device identifiers or advertising IDs</li>
+            <li>Health or biometric data from your smartwatch sensors</li>
+            <li>Payment information</li>
+        </ul>
+        <p class="spaced">The App is free and does not require account registration or login.</p>
+    </section>
+
+    <section>
+        <h2><span class="section-num">02</span> Content for Information Only</h2>
+        <p>
+            All content in Advently (recipes, tips and Christmas facts) is provided for entertainment and
+            general information purposes only. It does not constitute professional, medical, nutritional,
+            psychological, or any other kind of advice.
+        </p>
+    </section>
+
+    <section>
+        <h2><span class="section-num">03</span> Recipes, Allergies and Safety</h2>
+        <p>
+            Some gifts are simple recipes. Before preparing any of them, please:
+        </p>
+        <ul>
+            <li>Check every ingredient for possible allergies or intolerances. Some recipes contain <strong>eggs, milk, nuts or gluten</strong>.</li>
+            <li>Take care when handling hot liquids, stoves and ovens.</li>
+            <li>Supervise children at all times in the kitchen.</li>
+        </ul>
+        <p class="spaced">
+            You prepare and consume any recipe at your own risk.
+        </p>
+    </section>
+
+    <section>
+        <h2><span class="section-num">04</span> Local Data Storage</h2>
+        <p>
+            Advently stores only the following information locally on your device:
+        </p>
+        <ul>
+            <li>Which calendar doors you have already opened during the current season</li>
+        </ul>
+        <p class="spaced">
+            This data remains exclusively on your smartwatch and is used only to show your opened gifts.
+            It is never sent to us or to any third party, and it resets automatically each Christmas season.
+        </p>
+    </section>
+
+    <section>
+        <h2><span class="section-num">05</span> No Internet Connection</h2>
+        <p>
+            Advently works completely offline. All content is included in the app, and the app does not make
+            any network requests. No information of any kind leaves your device.
+        </p>
+    </section>
+
+    <section>
+        <h2><span class="section-num">06</span> Date and Time</h2>
+        <p>
+            Calendar doors unlock according to the date and time set on your smartwatch. If your device's
+            date is incorrect, doors may unlock earlier or later than expected.
+        </p>
+    </section>
+
+    <section>
+        <h2><span class="section-num">07</span> Data Sharing, Analytics and Tracking</h2>
+        <p>
+            We do not sell, rent, share, or transfer your data to third parties. Advently does not use analytics
+            services, advertising SDKs, tracking technologies, or user profiling tools. Your usage of the App is
+            not monitored, recorded, or reported in any form.
+        </p>
+        <p>
+            The App does not integrate with social networks, cloud storage providers, or advertising platforms.
+        </p>
+    </section>
+
+    <section>
+        <h2><span class="section-num">08</span> Children's Privacy</h2>
+        <p>
+            Advently is suitable for users of all ages and does not knowingly collect personal information
+            from children or any users. Since no personal data is collected at all, there is no risk of
+            inadvertent collection from users of any age group. Children should prepare recipes only with
+            adult supervision.
+        </p>
+    </section>
+
+    <section>
+        <h2><span class="section-num">09</span> Data Control</h2>
+        <p>
+            Because the only stored information stays on your device, you keep full control over it.
+            Uninstalling the App removes all locally stored data from your smartwatch.
+        </p>
+    </section>
+
+    <section>
+        <h2><span class="section-num">10</span> Disclaimer and Limitation of Liability</h2>
+        <p>
+            Advently is provided "as is" and "as available", without warranties of any kind, either express
+            or implied. To the maximum extent permitted by applicable law, we are not liable for any direct,
+            indirect, incidental, or consequential damages arising from the use of, or inability to use, the App
+            or its content.
+        </p>
+    </section>
+
+    <section>
+        <h2><span class="section-num">11</span> Updates to These Terms</h2>
+        <p>
+            We may update these Terms and Conditions from time to time to reflect changes in the App
+            or applicable regulations. Any updates will be reflected by revising the effective date at
+            the top of this document. Continuing to use the App after an update means you accept the
+            revised Terms.
+        </p>
+    </section>
+
+    <section>
+        <h2><span class="section-num">12</span> Contact</h2>
+        <p>
+            If you have any questions, concerns, or requests regarding these Terms and Conditions
+            or the privacy practices of Advently, please reach out:
+        </p>
+        <div class="contact-box">
+            <p class="label">Support contact</p>
+            <p><strong>Advently Support</strong> — <a href="mailto:vgoswaldo@gmail.com">vgoswaldo@gmail.com</a></p>
+        </div>
+        <p class="spaced">
+            By using Advently, you agree to these Terms and Conditions.
+        </p>
+    </section>
+
+    <footer>
+        <p>Advently — Terms &amp; Conditions — <span>November 2026</span></p>
+        <p>HarmonyOS Smartwatch App</p>
+    </footer>
+
+</body>
+</html>
